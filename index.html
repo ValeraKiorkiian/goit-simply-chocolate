@@ -25,13 +25,9 @@
         <nav class="nav-title">
           <a href="./index.html" class="nav-logo"
             >Simply Chocolate
-            <img
-              src="./images/icons/chocolate.svg"
-              alt="Simply Chocolate Logo"
-              class="header-img"
-              width="24"
-              height="24"
-            />
+            <svg class="header-img" width="24" height="24">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-menu">Home</a></li>
@@ -40,11 +36,27 @@
           </ul>
         </nav>
         <ul class="nav-icons">
-          <li><img src="./images/icons/facebook.svg" alt="facebook logo" /></li>
-          <li>
-            <img src="./images/icons/instagram.svg" alt="instagram logo" />
+          <li class="nav-icons-content">
+            <a href="#" class="nav-icons-list">
+              <svg class="nav-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li><img src="./images/icons/twitter.svg" alt="twitter logo" /></li>
+          <li class="nav-icons-content">
+            <a href="#" class="nav-icons-list">
+              <svg class="nav-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-icons-content">
+            <a href="#" class="nav-icons-list">
+              <svg class="nav-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -77,7 +89,12 @@
         <div class="container">
           <h2 hidden>Simply Chocolate Benefits</h2>
           <ul class="benefits-list">
-            <li>
+            <li class="benefits-border">
+              <div class="benefits-icons">
+                <svg class="benefits-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-h">Unsurpassed taste</h3>
               <p class="benefits-p">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -86,7 +103,13 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="benefits-border">
+              <div class="benefits-icons">
+                <svg class="benefits-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+
               <h3 class="benefits-h">Affordable price</h3>
               <p class="benefits-p">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -96,7 +119,14 @@
                 in affordable luxury today.
               </p>
             </li>
+
+            <li class="benefits-border"></li>
             <li>
+              <div class="benefits-icons">
+                <svg class="benefits-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-h">Own production</h3>
               <p class="benefits-p">
                 We take pride in our own production process, ensuring that every
@@ -340,37 +370,65 @@
           <h2 class="top-title">Top <span class="top-span">sellers</span></h2>
           <ul class="top-list">
             <li class="top-contant">
-              <img
-                class="top-img"
-                src="./images/sellers/img-1.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="top-overlay">
+                <img
+                  class="top-img"
+                  src="./images/sellers/img-1.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="top-overlay-text">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
+
               <div class="top-body">
                 <h3 class="top-h">CHOCOLATE WITH NUTS</h3>
               </div>
             </li>
             <li class="top-contant">
-              <img
-                class="top-img"
-                src="./images/sellers/img-2.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="top-overlay">
+                <img
+                  class="top-img"
+                  src="./images/sellers/img-2.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="top-overlay-text">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
+
               <div class="top-body">
                 <h3 class="top-h">CHOCOLATE WITH FRUITS</h3>
               </div>
             </li>
             <li class="top-contant">
-              <img
-                class="top-img"
-                src="./images/sellers/img-3.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="top-overlay">
+                <img
+                  class="top-img"
+                  src="./images/sellers/img-3.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <p class="top-overlay-text">
+                  Dark chocolate is a rich and indulgent treat that is beloved
+                  by many chocolate enthusiasts. It is made from cocoa beans,
+                  which are roasted, ground, and then processed to produce
+                  chocolate liquor. Dark chocolate contains a higher percentage
+                  of cocoa solids compared to milk chocolate.
+                </p>
+              </div>
+
               <div class="top-body">
                 <h3 class="top-h">DARK CHOCOLATE</h3>
               </div>
@@ -387,6 +445,7 @@
           <ul class="reviews-list">
             <li class="reviews-contant">
               <img
+                class="reviews-img"
                 src="./images/reviews/img-1.png"
                 width="80"
                 height="80"
@@ -402,6 +461,7 @@
             </li>
             <li class="reviews-contant">
               <img
+                class="reviews-img"
                 src="./images/reviews/img-2.png"
                 width="80"
                 height="80"
@@ -418,6 +478,7 @@
             </li>
             <li class="reviews-contant">
               <img
+                class="reviews-img"
                 src="./images/reviews/img-3.png"
                 width="80"
                 height="80"
@@ -438,52 +499,61 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-title">
-        Chocolate
-        <span class="footer-span">a delicious cure for a bad day</span>
-      </p>
+      <div class="container">
+        <div class="footer-top">
+          <p class="footer-title">
+            <span class="footer-span">Chocolate</span> a delicious cure for a
+            bad day
+          </p>
+          <div class="footer-social">
+            <p class="footer-p">Social networks</p>
+            <ul class="footer-list-top">
+              <li class="footer-icons">
+                <a href="#" class="footer-icons-list">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons">
+                <a href="#" class="footer-icons-list">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons">
+                <a href="#" class="footer-icons-list">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-address-list">
+            <p class="footer-p">Contact us</p>
 
-      <p class="footer-p">Social networks</p>
-      <ul>
-        <li>
-          <img
-            src="./images/icons/facebook.svg"
-            alt="facebook logo"
-            class="footer-img"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/icons/instagram.svg"
-            alt="instagram logo"
-            class="footer-img"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/icons/twitter.svg"
-            alt="twitter logo"
-            class="footer-img"
-          />
-        </li>
-      </ul>
-
-      <p class="footer-p">Contact us</p>
-
-      <address class="footer-address">
-        <a href="tel:+380684439426" class="footer-address"
-          >+380 (68) 443-94-26</a
-        >
-        <a href="mailto:simplychoc@gmail.com" class="footer-address"
-          >simplychoc@gmail.com</a
-        >
-      </address>
-
-      <ul class="footer-list">
-        <li><a href="./index.html" class="footer-link">Home</a></li>
-        <li><a href="#made" class="footer-link">How it's made?</a></li>
-        <li><a href="#reviews" class="footer-link">Chocolate is loved</a></li>
-      </ul>
+            <address class="footer-address">
+              <a href="tel:+380684439426" class="footer-address-link"
+                >+380 (68) 443-94-26</a
+              >
+              <a href="mailto:simplychoc@gmail.com" class="footer-address-link"
+                >simplychoc@gmail.com</a
+              >
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-list">
+            <li><a href="./index.html" class="footer-link">Home</a></li>
+            <li><a href="#made" class="footer-link">How it's made?</a></li>
+            <li>
+              <a href="#reviews" class="footer-link">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
