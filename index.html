@@ -73,13 +73,14 @@
               <button type="button" class="hero-button">Buy now</button>
               <a href="#made" class="hero-button-two">How it's made</a>
             </div>
+
             <a href="#benefits" class="hero-scroll"
               >scroll down
-              <img
-                src="./images/hero/arrow-down.svg"
-                alt="arrow-down"
-                class="hero-scroll-img"
-              />
+              <div class="hero-scroll-container">
+                <svg class="hero-scroll-img" width="22" height="22">
+                  <use href="./images/icons.svg#icon-scroll"></use>
+                </svg>
+              </div>
             </a>
           </div>
         </div>
@@ -120,8 +121,7 @@
               </p>
             </li>
 
-            <li class="benefits-border"></li>
-            <li>
+            <li class="benefits-border">
               <div class="benefits-icons">
                 <svg class="benefits-svg" width="32" height="32">
                   <use href="./images/icons.svg#icon-spoon"></use>
